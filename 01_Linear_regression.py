@@ -15,4 +15,4 @@ y = x @ w_true + b_true + noise
 
 linear = Dense(n_features, 1)
 
-train(linear, x, y, epochs = 100, lr = 0.01)
+train(linear, x, y, epochs = 50, lr = 0.1)

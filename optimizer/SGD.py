@@ -3,6 +3,8 @@ class SGD:
         self.params = params
         self.lr = lr
     def step(self):
-        for p in self.params:
-            p.data = p.data - self.lr*p.grad
+        for weights, grad in self.params:
+            weights -= self.lr*grad
+       
+
             
