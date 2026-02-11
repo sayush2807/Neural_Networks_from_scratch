@@ -1,5 +1,5 @@
 import numpy as np
-from layers.linear import Dense
+from layers.linear import Dense # folder -->python file -->class
 from train import train
 
 # create input 
