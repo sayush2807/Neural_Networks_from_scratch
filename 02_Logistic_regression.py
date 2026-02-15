@@ -1,0 +1,1 @@
+# data --> weights --> forward --> backward --> optimzier 
