@@ -7,5 +7,5 @@ class sigmoid:
     def forward(z):
         self.y_hat = i/(1+np.exp(-z))
         return y_hat
-
-    def backward():
+    # loss travels back through backpropagation
+    def backward(): 
