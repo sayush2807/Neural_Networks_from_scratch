@@ -8,4 +8,6 @@ class sigmoid:
         self.y_hat = i/(1+np.exp(-z))
         return y_hat
     
-    def backward(): 
+    def backward(dz): 
+        # just pass the gradient coming from loss
+        return dz
