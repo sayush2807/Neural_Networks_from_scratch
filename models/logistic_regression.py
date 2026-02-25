@@ -8,4 +8,5 @@ class LogisticRegressionClass:
     def forward(self, x):
         self.linear.forward()
         self.sigmoid.forward()
-        
+        self.bce()
+        self.sigmoid.backward()
