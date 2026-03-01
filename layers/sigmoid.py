@@ -9,5 +9,5 @@ class sigmoid:
         return y_hat
     
     def backward(dz): 
-        # just pass the gradient coming from loss
+        # calculates its on part of chain rule, dy_hat/dz
         return dz
