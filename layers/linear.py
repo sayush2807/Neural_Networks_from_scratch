@@ -26,3 +26,4 @@ class Dense:
 
     def parameters(self):
         return [(self.w, self.gradient_w), (self.b, self.gradient_b)]
+    

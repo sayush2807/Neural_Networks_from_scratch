@@ -1,6 +1,7 @@
 import numpy as np
 from layers.linear import Dense # folder -->python file -->class
 from train import train
+from losses.mse import mse_loss
 
 # create input 
 n_samples = 10
@@ -15,4 +16,4 @@ y = x @ w_true + b_true + noise
 
 linear = Dense(n_features, 1)
 
-train(linear, x, y, epochs = 50, lr = 0.1)
+train(linear, x, y, epochs = 50, lr = 0.1, mse_loss)
