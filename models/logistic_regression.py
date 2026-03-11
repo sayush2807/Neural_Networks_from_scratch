@@ -5,5 +5,11 @@ class LogisticRegressionClass:
         
 
     def forward(self, x):
-        self.linear.forward()
+        self.linear.forward(x)
         self.sigmoid.forward()
+        self.bce.forward()
+        
+    def backward(self)
+        self.bce.backward()
+        self.sigmoid.backward()
+        self.linear.backwar()
