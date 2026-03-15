@@ -9,7 +9,7 @@ class LogisticRegressionClass:
         self.sigmoid.forward()
         self.bce.forward()
         
-    def backward(self)
+    def backward(self):
         self.bce.backward()
         self.sigmoid.backward()
         self.linear.backwar()
