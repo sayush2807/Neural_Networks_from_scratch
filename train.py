@@ -2,6 +2,8 @@ from losses.mse import mse_loss
 from optimizer.SGD import SGD
 import numpy as np
 
+# train logistic regression
+
 def train(linear, x,y, epochs, lr, loss):
     optimizer = SGD(params = linear.parameters(), lr = lr )
     for i in range(epochs):

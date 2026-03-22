@@ -10,5 +10,4 @@ class sigmoid:
     
     def backward(self, dz):
         # calculates its on part of chain rule, dy_hat/dz = x
-        
         return dz * self.y_hat*
