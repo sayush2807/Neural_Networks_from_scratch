@@ -1,10 +1,11 @@
-from losses.mse import mse_loss
+from losses.mse import bce_loss
 from optimizer.SGD import SGD
 import numpy as np
-
+from models import LogisticRegression
 # train logistic regression
 
 def train(linear, x,y, epochs, lr, loss):
+    logistic_regressor = LogisticRegression()
     optimizer = SGD(params = linear.parameters(), lr = lr )
     for i in range(epochs):
         y_hat = linear.forward(x)
