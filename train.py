@@ -7,6 +7,7 @@ from models import LogisticRegression
 def train(linear, x,y, epochs, lr, loss):
     logistic_regressor = LogisticRegression()
     optimizer = SGD(params = linear.parameters(), lr = lr )
+    sigmoid = Sigmoid()
     for i in range(epochs):
         y_hat = linear.forward(x)
         print("Epoch ", i+1, " : Loss", loss(y,y_hat))
