@@ -4,6 +4,8 @@ import numpy as np
 from models.logistic_regression import LogisticRegression
 # train logistic regression
 
+#create data
+
 def train(x,y, epochs, lr, loss):
     model = LogisticRegression(n_features = x.shape[1])
     loss_fn = BCELoss()
