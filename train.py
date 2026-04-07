@@ -5,6 +5,7 @@ from models.logistic_regression import LogisticRegression
 # train logistic regression
 
 #create data
+x = 
 
 def train(x,y, epochs, lr, loss):
     model = LogisticRegression(n_features = x.shape[1])
